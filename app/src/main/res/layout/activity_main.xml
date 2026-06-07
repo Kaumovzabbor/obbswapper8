@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Package name:"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etPackageName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="com.example.game"
+            android:inputType="text"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OBB file name (in Android/obb):"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etObbName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="main.12345.com.example.game.obb"
+            android:inputType="text"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Source file name (in Testobb folders):"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etSrcName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1.obb"
+            android:inputType="text"
+            android:singleLine="true"/>
+
+        <Button
+            android:id="@+id/btnPermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REQUEST PERMISSION"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DELETE OBB"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnCopyReal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COPY REAL"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btnCopyTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COPY TEST"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:max="100"
+            android:progress="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log:"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="4dp"
+            android:background="#F5F5F5">
+
+            <TextView
+                android:id="@+id/tvLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="12sp"
+                android:fontFamily="monospace"
+                android:text=""/>
+        </ScrollView>
+
+    </LinearLayout>
+</ScrollView>
